@@ -1,0 +1,131 @@
+package com.company;
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	//AUTHOR: ANGEL MANUEL CORREA RIVERA
+    //DATE: 16/08/2020
+    //DESCRIPTION: THIS SOFTWARE SIMULATE A VIDEO GAME MENU.
+        Scanner keyboard= new Scanner(System.in);
+        int Return_menu = 0;
+        int option = 0;
+        menu();
+        System.out.println("Input the option");
+        option = keyboard.nextInt();
+        while (option <=0 || option >3){
+            System.err.println("ERROR: THE OPTION DOES NOT VALID");
+            System.out.println("Please, input again the option");
+            option = keyboard.nextInt();
+        }if (option >0 && option <4){
+            if (option == 1){
+                PLAY_MENU();
+                System.out.println("Input the option:");
+                Return_menu = keyboard.nextInt();
+                if (Return_menu == 0) {
+                    menu();
+                }
+            }else if (option == 2){
+                TUTORIAL();
+                System.out.println("Input the option:");
+                Return_menu = keyboard.nextInt();
+                if (Return_menu == 0) {
+                    menu();
+                }
+            }else if (option == 3){
+                Extras();
+                System.out.println("Input the option:");
+                Return_menu = keyboard.nextInt();
+                if (Return_menu == 0) {
+                    menu();
+                }
+            }
+        }
+
+        }
+    public static void menu() {
+        //DESCRIPTION: THIS METHOD CONTAIN THE VIDEO GAME MENU
+        System.out.println("╔══════════════════════════════════════════════════════════════╗");
+        System.out.println("║                  ║     GEFORCE STRIX     ║                   ║███████████████████████████");
+        System.out.println("║══════════════════════════════════════════════════════════════║███████▀▀▀░░░░░░░▀▀▀███████");
+        System.out.println("║     1. Play      ║       2.Tutorial      ║     3. Extras     ║████▀░░░░░░░░░░░░░░░░░▀████");
+        System.out.println("║══════════════════════════════════════════════════════════════║███│░░░░░░░░░░░░░░░░░░░│███");
+        System.out.println("║                  ║                       ║                   ║██▌│░░░░░░░░░░░░░░░░░░░│▐██");
+        System.out.println("║                  ║                       ║                   ║██░└┐░░░░░░░░░░░░░░░░░┌┘░██");
+        System.out.println("║                  ║                       ║                   ║██░░└┐░░░░░░░░░░░░░░░┌┘░░██");
+        System.out.println("║══════════════════════════════════════════════════════════════║██░░┌┘▄▄▄▄▄░░░░░▄▄▄▄▄└┐░░██");
+        System.out.println("║                                                              ║██▌░│██████▌░░░▐██████│░▐██");
+        System.out.println("║ Created by: Angel Manuel Correa Rivera                       ║███░│▐███▀▀░░▄░░▀▀███▌│░███");
+        System.out.println("║                                                              ║██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██");
+        System.out.println("║══════════════════════════════════════════════════════════════║██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██");
+        System.out.println("║    ║    ║    ║    ║    ║    ║    ║    ║    ║    ║    ║   ║   ║████▄─┘██▌░░░░░░░▐██└─▄████");
+        System.out.println("║    ║    ║    ║    ║    ║    ║    ║    ║    ║    ║    ║   ║   ║█████░░▐█─┬┬┬┬┬┬┬─█▌░░█████");
+        System.out.println("║    ║    ║    ║    ║    ║    ║    ║    ║    ║    ║    ║   ║   ║████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████");
+        System.out.println("║══════════════════════════════════════════════════════════════║█████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████");
+        System.out.println("║                                                              ║███████▄░░░░░░░░░░░▄███████");
+        System.out.println("║ Version: Alpha 1.5                                           ║██████████▄▄▄▄▄▄▄██████████");
+        System.out.println("╚══════════════════════════════════════════════════════════════╝");
+        /*System.out.println("                                                                ");
+        S the ystem.out.println("Inputoption.");
+        Scanner keyboard = new Scanner(System.in);
+        int option = keyboard.nextInt();
+        while (option < 1 || option > 4) {
+            System.err.println("ERROR: THE OPTION DOES NOT EXIST.");
+            System.out.println("Please, input again the option.");
+            option = keyboard.nextInt();
+        }
+        return option;*/
+    }
+    public static void PLAY_MENU() {
+        System.out.println("Sorry the game is still in development");
+        System.out.println("Please input 0 to return to he Menu");
+        /*Scanner keyboard = new Scanner(System.in);
+        int Return_Menu = keyboard.nextInt();
+        while (Return_Menu < 0 || Return_Menu > 0) {
+            System.err.println("ERROR: THE OPTION DOES NOT EXIST");
+            System.out.println("Remember the game is still in development, Input 0 to return to the Menu, Thanks :) ");
+            Return_Menu = keyboard.nextInt();
+            }
+        return Return_Menu;*/
+    }
+    public static void TUTORIAL (){
+        System.out.println("Hello my name is ROG and I will teach you the basic techniques of the game");
+        System.out.println("LETS GO.");
+        System.out.println("╔══════════════════════════════════════════════════════════════╗");
+        System.out.println("║                     ║     TUTORIAL     ║                     ║");
+        System.out.println("║══════════════════════════════════════════════════════════════║");
+        System.out.println("║ 1. Learn to move.                                            ║");
+        System.out.println("║    With the keys W,S,A,D you can move and SPACE for jump     ║");
+        System.out.println("║══════════════════════════════════════════════════════════════║");
+        System.out.println("║ 2. Learn to defend Yourself.                                 ║");
+        System.out.println("║    With left click you can shoot                             ║");
+        System.out.println("║══════════════════════════════════════════════════════════════║");
+        System.out.println("║ 3. What is the game about?                                   ║");
+        System.out.println("║    You need investigate different places, while something    ║");
+        System.out.println("║    Watch you and prepares to attack you.                     ║");
+        System.out.println("╚══════════════════════════════════════════════════════════════╝");
+        System.out.println("Please input 0 to return to he Menu");
+        /*Scanner keyboard = new Scanner(System.in);
+        int Return_Menu = keyboard.nextInt();
+        while (Return_Menu < 0 || Return_Menu > 0) {
+            System.err.println("ERROR: THE OPTION DOES NOT EXIST");
+            System.out.println("Remember the game is still in development, Input 0 to return to the Menu, Thanks :) ");
+            Return_Menu = keyboard.nextInt();
+        }
+        return Return_Menu;*/
+    }
+    public static void Extras (){
+        System.out.println("Please download the DLC in the Store, Thanks");
+        System.out.println("Please input 0 to return to he Menu");
+        /*Scanner keyboard = new Scanner(System.in);
+        int Return_Menu = keyboard.nextInt();
+        while (Return_Menu < 0 || Return_Menu > 0) {
+            System.err.println("ERROR: THE OPTION DOES NOT EXIST");
+            System.out.println("Remember the game is still in development, Input 0 to return to the Menu, Thanks :) ");
+            Return_Menu = keyboard.nextInt();
+        }
+        return Return_Menu;*/
+    }
+}
